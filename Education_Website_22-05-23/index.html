@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <title>Web Design Mastery | Learning Landing Page</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__logo"><a href="#">Bijakmemilih.id</a></div>
+      <ul class="nav__links">
+        <li class="link"><a href="#">Home</a></li>
+        <li class="link"><a href="#service-page">Cara bijak</a></li>
+        <li class="link"><a href="#visi-misi">Visi-misi</a></li>
+        <li class="link"><a href="#simulasi-page">Simulasi</a></li>
+        <li class="link"><a href="#" class="nav__btn">Register</a></li>
+      </ul>
+    </nav>
+    <section class="container">
+      <div class="home__container">
+        <h1>
+          Hi! selamat datang<br />
+          <span class="heading__1">Platform Simulasi</span><br />
+          <span class="heading__2">Pemilihan Suara</span>
+        </h1>
+        <p>
+          Unlock your full learning potential with our intuitive education
+          platform. Seamlessly blending technology and education, we provide an
+          immersive learning environment that combines interactive lessons,
+          virtual classrooms, and intelligent feedback.
+        </p>
+        <form>
+          <!-- <input type="text" placeholder="What do you want to learn" /> -->
+          <button type="submit">MULAI SIMULASI!</button>
+        </form>
+      </div>
+      <div class="image__container">
+        <img src="assets/elemen7.webp" alt="header" />
+        <img src="assets/elemen4.jpg" alt="header" />
+        <div class="image__content">
+          <ul>
+            <li>AYO GUNAKAN HAK SUARA MU!</li>
+            <li>SUKSESKAN PEMILU 2024</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="service-page">
+      <div id="serve-title">3 Cara untuk <span>Bijak Memilih</span></div>
+      <div class="grid-box1">
+        <div class="card">
+          <div id="card-img1"></div>
+          <h2>Pahami isu</h2>
+          <p>Mulai dengan mencari tahu kebijakan terkait 
+            masalah sehari-hari yang jadi keresahanmu.</p>
+        </div>
+        <div class="card">
+          <div id="card-img2"></div>
+          <h2>Kenali partai</h2>
+          <p>Kenali partai yang sesuai denganmu dari ideologi, 
+            serta rekam jejak dan korupsi.</p>
+        </div>
+        <div class="card">
+          <div id="card-img3"></div>
+          <h2>Pelajari kandidat</h2>
+          <p>Cari tahu tentang rekam jejak dan gagasan 
+            dari masing-masing pasangan kandidat.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="visi-misi">
+      <div id="visi-title">Visi-Misi <span>Para Bohay</span></div>
+      <div class="grid-box2">
+        <div class="card2">
+          <div id="card-imgv1"></div>
+          <h2>Aboy</h2>
+          <p>memperbesar masyarakat hitam <br>
+          wajib latihan suara F1 dan rawerr <br>
+        penghitaman massal</p>
+        </div>
+        <div class="card2">
+          <div id="card-imgv2"></div>
+          <h2>Mukodok</h2>
+          <p>Menghirupkan 2x oksigen <br>
+          sejahterakan masyarakat mini <br>
+        Memprioritaskan para si imut</p>
+        </div>
+        <div class="card2">
+          <div id="card-imgv3"></div>
+          <h2>Pangkimak</h2>
+          <p>Membasmi jamet metal <br>
+          Mensejahterakan Basis demi apa?<br>
+        demikian</p>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" id="svg-bg">
+        <path fill="red" fill-opacity="1" d="M0,192L40,208C80,224,160,256,240,272C320,288,400,288,480,272C560,256,640,224,720,224C800,224,880,256,960,266.7C1040,277,1120,267,1200,256C1280,245,1360,235,1400,229.3L1440,224L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
+      </svg>
+    </section>
+
+    <section id="simulasi-page">
+      <div id="simulasi-title">Simulasi Pemilihan Suara</div>
+      <div class="grid-box3">
+        <form action="" id="verify">
+          <h1>Verifikasi</h1>
+          <label for="nama">Nama</label>
+          <input type="text" id="nama" placeholder="Masukkan nama">
+          <label for="umur">Umur</label>
+          <input type="number" min="1" id="umur" placeholder="Masukkan umur">
+          <label for="email">Alamat E-mail</label>
+          <input type="email" id="email" placeholder="Masukkan email">
+          <label for="tempatTinggal">Tempat tinggal</label>
+          <input type="text" id="tempatTinggal" placeholder="Masukkan tempat tinggal">
+          <button type="button" onclick="Vote()">VOTE</button>
+        </form>        
+        <div class="candidate">
+          <h1>Candidate's</h1>
+          <div class="cand">
+            <div class="cand-1">
+              <img src="assets/bohayv1.jpg" alt="">
+              <label for="">Vote no 1</label>
+              <input type="radio" name="candidate" id="cand1" value="1">
+            </div>
+            <div class="cand-2">
+              <img src="assets/bohayv2.jpg" alt="">
+              <label for="">Vote no 2</label>
+              <input type="radio" name="candidate" id="cand2" value="2">
+            </div>
+            <div class="cand-3">
+              <img src="assets/bohayv3.jpg" alt="">
+              <label for="">Vote Candite 1</label>
+              <input type="radio" name="candidate" id="cand3" value="3">
+            </div>
+            <div class="cand__content">
+              <ul>
+                <li>AYO GUNAKAN HAK SUARA MU!</li>
+                <li>SUKSESKAN PEMILU 2024</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" id="svg-box2">
+        <path fill="red" fill-opacity="1" d="M0,64L18.5,53.3C36.9,43,74,21,111,42.7C147.7,64,185,128,222,138.7C258.5,149,295,107,332,90.7C369.2,75,406,85,443,90.7C480,96,517,96,554,122.7C590.8,149,628,203,665,197.3C701.5,192,738,128,775,101.3C812.3,75,849,85,886,96C923.1,107,960,117,997,117.3C1033.8,117,1071,107,1108,90.7C1144.6,75,1182,53,1218,48C1255.4,43,1292,53,1329,64C1366.2,75,1403,85,1422,90.7L1440,96L1440,320L1421.5,320C1403.1,320,1366,320,1329,320C1292.3,320,1255,320,1218,320C1181.5,320,1145,320,1108,320C1070.8,320,1034,320,997,320C960,320,923,320,886,320C849.2,320,812,320,775,320C738.5,320,702,320,665,320C627.7,320,591,320,554,320C516.9,320,480,320,443,320C406.2,320,369,320,332,320C295.4,320,258,320,222,320C184.6,320,148,320,111,320C73.8,320,37,320,18,320L0,320Z"></path>
+      </svg>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
